@@ -297,8 +297,8 @@ const Profile = () => {
             
             <div className='bg-light head-container d-flex'>
                 <div className="col">
-                    {isFriendsBtn ? (<button onClick={getFriends} className="btn btn-warning">See Friends</button>) : <></>}
-                    
+                    <h1>Friends</h1>
+                    {isFriendsBtn ? (<button className="btn btn-warning" onClick={getFriends} >See Friends</button>) : (<></>)}
                     {
                         !isFriendsBtn ? (
                             loggedInUser.friends.length !== 0 ? (

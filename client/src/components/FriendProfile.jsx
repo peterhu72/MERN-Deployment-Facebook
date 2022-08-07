@@ -62,7 +62,7 @@ const FriendProfile = () => {
                 .then(res => {
                     console.log(res)
                     if (res.data.results !== undefined ){
-                        setFriendList([...friendList, res.data.results])
+                        setFriendList(arr => [...arr, res.data.results])
                     } 
                     console.log(res.data.results)
                 })

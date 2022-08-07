@@ -159,7 +159,7 @@ class UserController{
 
     addFriend = (req, res) => {
         User.updateOne(
-            {_id: req.params.id},
+            {_id: req.params.id}, 
             {
                 $push : {
                     friends: {

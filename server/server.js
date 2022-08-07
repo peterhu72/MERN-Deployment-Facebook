@@ -14,11 +14,11 @@ app.use(cors({credentials: true, origin: 'http://localhost:3000'}));
 app.use(cookieParser())
 
 // connect to db
-require("./server/config/mongoose.config");
+require("./config/mongoose.config");
 
 
-require("./server/routes/user.routes")(app);
-require("./server/routes/post.routes")(app);
+require("./routes/user.routes")(app);
+require("./routes/post.routes")(app);
 
 
 
